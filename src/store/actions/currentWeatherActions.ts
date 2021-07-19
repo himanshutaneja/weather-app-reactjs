@@ -6,6 +6,7 @@ import {
   CURRENT_WEATHER_SUCCEEDED,
   CURRENT_WEATHER_FAILED,
 } from '../actionTypes';
+import { getWeatherForecast } from './weatherForecastActions';
 import { invokeAPI } from '../../helpers';
 import { URLS } from '../../constants';
 
@@ -29,10 +30,13 @@ export const getWeather = (
         throw new Error(res.data.message);
       }
 
+      const resData = res.data;
       dispatch({
         type: CURRENT_WEATHER_SUCCEEDED,
-        payload: res.data,
+        payload: resData,
       });
+
+      dispatch(getWeatherForecast(resData.coord));
     } catch (err) {
       dispatch({
         type: CURRENT_WEATHER_FAILED,

@@ -8,6 +8,7 @@ import { currentWeatherMock } from '../../fixtures/CurrentWeather.fixture';
 describe('currentWeatherActions', () => {
   describe('getWeather', () => {
     const dispatch = jest.fn();
+    const getWeatherForecastMock = jest.fn();
     beforeEach(() => {
       jest.resetModules();
       jest.clearAllMocks();
@@ -35,6 +36,9 @@ describe('currentWeatherActions', () => {
       jest.doMock('../../helpers', () => ({
         invokeAPI: () => ({ status: 200, data: currentWeatherMock }),
       }));
+      jest.doMock('./weatherForecastActions', () => ({
+        getWeatherForecast: getWeatherForecastMock,
+      }));
 
       const { getWeather } = require('./currentWeatherActions');
 
@@ -47,6 +51,10 @@ describe('currentWeatherActions', () => {
         type: CURRENT_WEATHER_SUCCEEDED,
         payload: currentWeatherMock,
       });
+
+      expect(dispatch).toHaveBeenCalledWith(
+        getWeatherForecastMock(currentWeatherMock.coord),
+      );
     });
   });
 });
