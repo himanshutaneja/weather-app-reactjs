@@ -20,9 +20,11 @@ describe('apiHelper', () => {
 
     expect(response).toEqual('mock response');
     expect(axiosGetMock).toHaveBeenCalledWith(`${URLS.BASE_URL}someUrl`, {
-      appid: 'api key',
-      q: 'test',
-      units: 'metric',
+      params: {
+        appid: 'api key',
+        q: 'test',
+        units: 'metric',
+      },
     });
     process.env.REACT_APP_API_KEY = original;
   });
