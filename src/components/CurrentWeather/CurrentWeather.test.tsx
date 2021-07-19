@@ -8,7 +8,7 @@ describe('CurrentWeather', () => {
     wrapper = shallow(<CurrentWeather data={currentWeatherMock} />);
   });
 
-  it('should render search bar correctly', () => {
+  it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

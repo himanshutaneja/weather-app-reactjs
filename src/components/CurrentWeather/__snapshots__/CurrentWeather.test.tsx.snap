@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CurrentWeather should render search bar correctly 1`] = `
+exports[`CurrentWeather should render correctly 1`] = `
 <styled.div>
   <styled.div>
     <styled.div>

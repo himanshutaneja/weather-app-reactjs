@@ -8,7 +8,7 @@ describe('Forecast', () => {
     wrapper = shallow(<Forecast data={weatherForecastMock} />);
   });
 
-  it('should render search bar correctly', () => {
+  it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

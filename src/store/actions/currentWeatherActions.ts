@@ -38,9 +38,10 @@ export const getWeather = (
 
       dispatch(getWeatherForecast(resData.coord));
     } catch (err) {
+      const errorMessage = err?.response?.data?.message || err.message;
       dispatch({
         type: CURRENT_WEATHER_FAILED,
-        payload: err.message,
+        payload: errorMessage,
       });
     }
   };

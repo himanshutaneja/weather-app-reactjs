@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForecastItem should render search bar correctly 1`] = `
+exports[`ForecastItem should render correctly 1`] = `
 <styled.div>
   <styled.h3>
     Mon 19
