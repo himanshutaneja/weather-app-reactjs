@@ -5,13 +5,11 @@ interface ErrorProps {
   message: string;
 }
 
-const Error: FC<ErrorProps> = ({ message }) => {
-  return (
-    <ErrorContainer>
-      <strong>Error. </strong>
-      {message}
-    </ErrorContainer>
-  );
-};
+const Error: FC<ErrorProps> = ({ message }) => (
+  <ErrorContainer>
+    <strong>Error. </strong>
+    {message}
+  </ErrorContainer>
+);
 
 export default Error;
