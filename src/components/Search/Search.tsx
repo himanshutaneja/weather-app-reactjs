@@ -1,5 +1,5 @@
 import { FC, useState, KeyboardEvent, ChangeEvent } from 'react';
-
+import { SearchBox, SearchBarWrapper, SearchBar } from './styles';
 interface SearchProps {
   placeholderText: string;
   onSearch: (searchParam: string) => void;
@@ -21,9 +21,9 @@ const Search: FC<SearchProps> = ({ placeholderText, onSearch }) => {
   };
 
   return (
-    <div>
-      <div>
-        <input
+    <SearchBox>
+      <SearchBarWrapper>
+        <SearchBar
           type="text"
           placeholder={placeholder}
           onChange={handleChangeValue}
@@ -32,8 +32,8 @@ const Search: FC<SearchProps> = ({ placeholderText, onSearch }) => {
           onFocus={() => setPlaceholder('')}
           onBlur={() => setPlaceholder(placeholderText)}
         />
-      </div>
-    </div>
+      </SearchBarWrapper>
+    </SearchBox>
   );
 };
 

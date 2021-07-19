@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { useDispatch } from 'react-redux';
 import { Search } from './components/Search';
 import { getWeather } from './store/actions/currentWeatherActions';
+import { Layout } from './styles';
 
 const App: FC = () => {
   const dispatch = useDispatch();
@@ -11,9 +12,9 @@ const App: FC = () => {
   };
 
   return (
-    <div>
+    <Layout>
       <Search placeholderText="Enter city name..." onSearch={onSearch} />
-    </div>
+    </Layout>
   );
 };
 
