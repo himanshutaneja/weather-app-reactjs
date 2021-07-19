@@ -5,3 +5,8 @@ export const Layout = styled.div`
   background-image: linear-gradient(#69a9bf, #a3d4dd, #f8fcfd);
   height: 100vh;
 `;
+
+export const ContentWrapper = styled.div`
+  margin: 12px 150px;
+  color: #fff;
+`;

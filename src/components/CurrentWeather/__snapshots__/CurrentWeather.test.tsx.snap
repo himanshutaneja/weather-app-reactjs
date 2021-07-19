@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWeather should render search bar correctly 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      Sydney
+       - 
+      AU
+       Weather
+    </styled.div>
+    <styled.div>
+      As of 
+      01:41 PM
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    <div>
+      <styled.span>
+        15
+        °
+      </styled.span>
+      <styled.div>
+        broken clouds
+      </styled.div>
+    </div>
+    <div>
+      <styled.i
+        className="wi wi-owm-803"
+      />
+      <styled.div>
+        16
+        °/
+        14
+        °
+      </styled.div>
+    </div>
+  </styled.div>
+</styled.div>
+`;
