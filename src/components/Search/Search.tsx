@@ -1,4 +1,4 @@
-import { FC, useState, KeyboardEvent, ChangeEvent } from 'react';
+import React, { FC, KeyboardEvent, ChangeEvent } from 'react';
 import { SearchBox, SearchBarWrapper, SearchBar } from './styles';
 interface SearchProps {
   placeholderText: string;
@@ -6,8 +6,8 @@ interface SearchProps {
 }
 
 const Search: FC<SearchProps> = ({ placeholderText, onSearch }) => {
-  const [value, setValue] = useState('');
-  const [placeholder, setPlaceholder] = useState(placeholderText);
+  const [value, setValue] = React.useState('');
+  const [placeholder, setPlaceholder] = React.useState(placeholderText);
 
   const handleChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render search bar correctly 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.input
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      placeholder="Enter search term..."
+      type="text"
+      value=""
+    />
+  </styled.div>
+</styled.div>
+`;
