@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastItem should render search bar correctly 1`] = `
+<styled.div>
+  <styled.h3>
+    Mon 19
+  </styled.h3>
+  <styled.div>
+    15
+    °
+  </styled.div>
+  <styled.div>
+    8
+    °
+  </styled.div>
+  <styled.i
+    className="wi wi-owm-803"
+  />
+  <styled.div>
+    11.1
+    %
+  </styled.div>
+</styled.div>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forecast should render search bar correctly 1`] = `
+<styled.div>
+  <ForecastItem
+    data={
+      Object {
+        "dt": 1626660000,
+        "rain": 11.1,
+        "temp": Object {
+          "day": 14.83,
+          "eve": 12.81,
+          "max": 15.26,
+          "min": 8.14,
+          "morn": 8.27,
+          "night": 9.75,
+        },
+        "weather": Array [
+          Object {
+            "description": "broken clouds",
+            "icon": "04d",
+            "id": 803,
+            "main": "Clouds",
+          },
+        ],
+      }
+    }
+    key="1626660000"
+  />
+  <ForecastItem
+    data={
+      Object {
+        "dt": 1626746400,
+        "rain": 2,
+        "temp": Object {
+          "day": 16.09,
+          "eve": 13.85,
+          "max": 16.54,
+          "min": 8.81,
+          "morn": 9.07,
+          "night": 11.31,
+        },
+        "weather": Array [
+          Object {
+            "description": "scattered clouds",
+            "icon": "03d",
+            "id": 802,
+            "main": "Clouds",
+          },
+        ],
+      }
+    }
+    key="1626746400"
+  />
+</styled.div>
+`;
